@@ -169,7 +169,7 @@ if [ "$(uname)" == "Darwin" ]; then
 fi
 
 # Generate jazzy docs (macOS)
-if [[ $docs == true ] && [ "$(uname)" == "Darwin" ]]; then
+if [[ "($docs)" == "true" ] && [ "$(uname)" == "Darwin" ]]; then
     sourceScript "${projectFolder}/Package-Builder/jazzy.sh"
 fi
 
