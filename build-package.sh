@@ -45,7 +45,6 @@ do
       credentialsDir=$1
       ;;
     -docs)
-      shift
       docs=true
       ;;
   esac
