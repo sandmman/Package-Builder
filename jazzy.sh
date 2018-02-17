@@ -22,7 +22,7 @@ if [ -z "${GITHUB_USERNAME}" ] && [ -z "${GITHUB_PASSWORD}" ]; then
 fi
 
 # Check if .jazzy.yaml exists in the root folder of the repo
-if [ -e "${projectFolder}/.jazzy.yaml ]; then
+if [ -e "${projectFolder}"/.jazzy.yaml ]; then
 
     if [[ $TRAVIS_BRANCH != "master" ]]; then
         echo "Not master. Skipping jazzy generation."
