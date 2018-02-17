@@ -15,7 +15,7 @@
 ##
 
 # Check that we have credentials
-if [[ -z "${GITHUB_USERNAME}" ] && [ -z "${GITHUB_PASSWORD}" ]]; then
+if [ -z "${GITHUB_USERNAME}" ] && [ -z "${GITHUB_PASSWORD}" ]; then
     echo "Supplied jazzy docs flag, but credentials were not provided."
     echo "Expected: GITHUB_USER && GITHUB_PASSWORD Env variables."
     exit 1
